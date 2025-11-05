@@ -56,6 +56,25 @@ Implements a **Retrieval-Augmented Generation (RAG)** pipeline that retrieves re
 git clone https://github.com/HammadAli08/AI-Techathone.git
 cd AI-Techathone
 
+- step: Create Virtual Environment
+  commands:
+    - python -m venv venv
+    - source venv/bin/activate    # for Linux/Mac
+    - venv\Scripts\activate       # for Windows
+
+- step: Install Dependencies
+  commands:
+    - pip install -r requirements.txt
+
+- step: Set Environment Variables
+  description: Create a .env file with your Groq API key
+  env_file_content: |
+    api_key=your_groq_api_key_here
+
+- step: Run the App
+  commands:
+    - streamlit run app.py
+
 
 
 
